@@ -1,0 +1,3 @@
+ function resetCode() {
+                generatedCodeArea.textContent = '';
+            }
