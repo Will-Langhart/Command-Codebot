@@ -43,7 +43,7 @@
             const jsonFile = document.getElementById("json-file").files[0];
             const xmlFile = document.getElementById("xml-file").files[0];
 
-            f (htmlFile) {
+          if (htmlFile) {
                 readAndDisplayFile(htmlFile, "html-code");
             }
           if (cssFile) {
