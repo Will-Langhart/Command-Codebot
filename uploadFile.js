@@ -24,3 +24,20 @@
         }
           let undoStack = [];
         let redoStack = [];
+
+ // Function to handle file upload
+        function uploadFiles() {
+            const htmlFile = document.getElementById("html-file").files[0];
+            const cssFile = document.getElementById("css-file").files[0];
+            const jsFile = document.getElementById("js-file").files[0];
+
+            if (htmlFile) {
+                readAndDisplayFile(htmlFile, "html-code");
+            }
+            if (cssFile) {
+                readAndDisplayFile(cssFile, "css-code");
+            }
+            if (jsFile) {
+                readAndDisplayFile(jsFile, "js-code");
+            }
+        }
